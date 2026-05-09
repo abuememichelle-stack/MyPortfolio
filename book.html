@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Consultation — Michelle Abueme</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="book.css">
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav id="navbar">
+        <a href="home.html" class="logo">
+            <img src="images/logo-transparent.png" alt="Michelle Abueme">
+        </a>
+        <div class="nav-links">
+            <a href="home.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="skills.html" class="nav-link">Skills</a>
+            <a href="projects.html" class="nav-link">Projects</a>
+            <a href="testimonials.html" class="nav-link">Testimonials</a>
+            <a href="experience.html" class="nav-link">Experience</a>
+            <a href="book.html" class="nav-link--cta active">Book Consultation</a>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="home.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="testimonials.html" class="nav-link">Testimonials</a>
+        <a href="experience.html" class="nav-link">Experience</a>
+        <a href="book.html" class="nav-link--cta active">Book Consultation</a>
+    </div>
+
+    <!-- 1. AVAILABILITY STRIP -->
+    <div class="avail-strip" style="margin-top: 68px;">
+        <div class="avail-inner">
+            <div class="avail-badge">
+                <span class="avail-dot"></span>
+                <span>Currently accepting new clients</span>
+            </div>
+            <div class="avail-divider"></div>
+            <div class="avail-badge">
+                <span class="avail-label">Availability:</span>
+                <span>Mon – Fri &nbsp;·&nbsp; 9 AM – 6 PM PHT</span>
+            </div>
+            <div class="avail-divider"></div>
+            <div class="avail-badge">
+                <span class="avail-label">Call via:</span>
+                <span>Zoom &nbsp;·&nbsp; Google Meet &nbsp;·&nbsp; Loom</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. BOOKING HERO (FORM SECTION) -->
+    <section class="booking-section" style="padding-top: 0;">
+        <!-- LEFT -->
+        <div class="booking-left">
+            <div class="booking-left-inner">
+                <h1 class="reveal">Let's Work<br>Together</h1>
+                <img src="images/contact-img.png" alt="Michelle Abueme" class="reveal reveal-delay-1">
+            </div>
+        </div>
+
+        <!-- RIGHT — FORM -->
+        <div class="booking-right">
+            <div class="booking-form reveal reveal-delay-1">
+                <div class="form-row">
+                    <div class="input-wrap">
+                        <input type="text" id="firstName" placeholder=" " required>
+                        <label for="firstName">First Name</label>
+                    </div>
+                    <div class="input-wrap">
+                        <input type="text" id="lastName" placeholder=" " required>
+                        <label for="lastName">Last Name</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-wrap">
+                        <input type="email" id="email" placeholder=" " required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-wrap">
+                        <input type="tel" id="phone" placeholder=" " required>
+                        <label for="phone">Phone Number</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-wrap">
+                        <input type="date" id="date" placeholder=" " required>
+                        <label for="date">Preferred Date</label>
+                    </div>
+                    <div class="input-wrap">
+                        <input type="time" id="time" placeholder=" " required>
+                        <label for="time">Preferred Time</label>
+                    </div>
+                </div>
+                <div class="input-wrap full">
+                    <input type="text" id="subject" placeholder=" " required>
+                    <label for="subject">Subject</label>
+                </div>
+                <div class="input-wrap full">
+                    <textarea id="message" placeholder=" " rows="5" required></textarea>
+                    <label for="message">Message</label>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <span>Submit</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════
+         MOVED: 3. TRUST SIGNALS (EXPECT)
+    ═══════════════════════════════ -->
+    <section class="trust-section">
+        <div class="trust-inner">
+            <p class="section-eyebrow reveal">Why Book With Michelle</p>
+            <h2 class="section-heading reveal reveal-delay-1">What You Can <em>Expect</em></h2>
+            <div class="trust-grid">
+                <div class="trust-card reveal reveal-delay-1">
+                    <div class="trust-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3>No-Pressure Discovery</h3>
+                    <p>Our first session is purely exploratory — zero obligation. You leave with clarity, regardless of what comes next.</p>
+                </div>
+                <div class="trust-card reveal reveal-delay-2">
+                    <div class="trust-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                    </div>
+                    <h3>Responds Within 24 Hours</h3>
+                    <p>All booking inquiries are acknowledged within 24 hours — typically faster on business days.</p>
+                </div>
+                <div class="trust-card reveal reveal-delay-1">
+                    <div class="trust-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 11 12 14 22 4"/>
+                            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+                        </svg>
+                    </div>
+                    <h3>Clear Deliverables</h3>
+                    <p>Every engagement starts with defined scope, timelines, and outcomes — no vague promises, ever.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. THE PROCESS -->
+    <section class="process-section">
+        <div class="process-inner">
+            <p class="section-eyebrow reveal">The Process</p>
+            <h2 class="section-heading reveal reveal-delay-1">From Inquiry to <em>Strategy</em></h2>
+            <div class="process-steps">
+                <div class="process-step reveal reveal-delay-1">
+                    <div class="step-num">1</div>
+                    <div class="step-content">
+                        <h4>Submit the Form</h4>
+                        <p>Fill in your details and describe your project goals — takes less than 2 minutes.</p>
+                    </div>
+                </div>
+                <div class="step-connector" aria-hidden="true">
+                    <svg viewBox="0 0 40 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 10 H32 M28 4 L38 10 L28 16" stroke="#00BCD5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="process-step reveal reveal-delay-2">
+                    <div class="step-num">2</div>
+                    <div class="step-content">
+                        <h4>Receive Confirmation</h4>
+                        <p>A calendar invite lands in your inbox within 24 hours with meeting details and a prep guide.</p>
+                    </div>
+                </div>
+                <div class="step-connector" aria-hidden="true">
+                    <svg viewBox="0 0 40 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 10 H32 M28 4 L38 10 L28 16" stroke="#00BCD5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="process-step reveal reveal-delay-1">
+                    <div class="step-num">3</div>
+                    <div class="step-content">
+                        <h4>Strategy Session</h4>
+                        <p>We dive into your business, challenges, existing systems, and what to build or optimize next.</p>
+                    </div>
+                </div>
+                <div class="step-connector" aria-hidden="true">
+                    <svg viewBox="0 0 40 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 10 H32 M28 4 L38 10 L28 16" stroke="#00BCD5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="process-step reveal reveal-delay-2">
+                    <div class="step-num">4</div>
+                    <div class="step-content">
+                        <h4>Your Action Plan</h4>
+                        <p>Walk away with a clear, personalized roadmap — whether we work together or not.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. QUICK ANSWERS (FAQ) -->
+    <section class="faq-section">
+        <div class="faq-inner">
+            <p class="section-eyebrow reveal">Quick Answers</p>
+            <h2 class="section-heading reveal reveal-delay-1">Booking <em>FAQs</em></h2>
+            <div class="faq-list">
+                <div class="faq-item reveal reveal-delay-1">
+                    <div class="faq-q">
+                        <span class="faq-badge">Q</span>
+                        How long is the consultation?
+                    </div>
+                    <div class="faq-a">The initial consultation is 30–45 minutes. This gives us enough time to discuss your needs and identify the best path forward without overwhelming you with information overload.</div>
+                </div>
+                <div class="faq-item reveal reveal-delay-2">
+                    <div class="faq-q">
+                        <span class="faq-badge">Q</span>
+                        What should I prepare before the call?
+                    </div>
+                    <div class="faq-a">It helps to have a rough idea of your goals, the current tools or systems you're using, and any specific challenges you want to address. Nothing formal required — just come as you are.</div>
+                </div>
+                <div class="faq-item reveal reveal-delay-1">
+                    <div class="faq-q">
+                        <span class="faq-badge">Q</span>
+                        Which platforms and tools do you work with?
+                    </div>
+                    <div class="faq-a">I work across GoHighLevel, HubSpot, ActiveCampaign, Zapier, Monday.com, Google Workspace, and many more. If you're using a tool not listed here, just mention it — I adapt quickly.</div>
+                </div>
+                <div class="faq-item reveal reveal-delay-2">
+                    <div class="faq-q">
+                        <span class="faq-badge">Q</span>
+                        Is the consultation free?
+                    </div>
+                    <div class="faq-a">Yes — the discovery call is completely complimentary with no commitment required. Paid engagements only begin after we've mutually agreed on scope, deliverables, and timeline.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. LEARN MORE -->
+    <section class="learn-more-section">
+        <div class="overlay">
+            <div class="overlay-content">
+                <h2 class="reveal">Want to learn more?</h2>
+                <a href="projects.html" class="explore-btn reveal reveal-delay-1">Explore Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER (Same as before) -->
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="home.html">
+                        <img src="images/logo-transparent.png" alt="Michelle Abueme Branding">
+                    </a>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p>+639 62 580 9743</p>
+                    <p>michellemabueme@gmail.com</p>
+                    <p>Blk 31 Lot49 Youngsville, Igpt Opol Mis. Or.</p>
+                    <div class="footer-social-icons">
+                        <a href="https://www.facebook.com/michelle.micth/" target="_blank"><img src="images/fb.png" alt="Facebook"></a>
+                        <a href="https://www.upwork.com/freelancers/~012e29f9a9e0edf73e?mp_source=share" target="_blank"><img src="images/up.png" alt="Upwork"></a>
+                        <a href="https://www.linkedin.com/in/michelle-abueme/" target="_blank"><img src="images/ln.png" alt="LinkedIn"></a>
+                        <a href="mailto:michellemabueme@gmail.com" target="_blank"><img src="images/GM.png" alt="Gmail"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Michelle Abueme. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // (JS Logic remains unchanged)
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 40);
+        });
+
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        hamburger.addEventListener('click', () => {
+            const isOpen = hamburger.classList.toggle('open');
+            mobileMenu.classList.toggle('open', isOpen);
+            document.body.style.overflow = isOpen ? 'hidden' : '';
+        });
+
+        const revealEls = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12 });
+        revealEls.forEach(el => observer.observe(el));
+
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const isOpen = item.classList.contains('open');
+                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+                if (!isOpen) item.classList.add('open');
+            });
+        });
+    </script>
+</body>
+</html>
