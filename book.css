@@ -1057,6 +1057,24 @@ nav.scrolled {
     .footer-container { padding: 0 24px; }
     .footer-content { flex-direction: column; align-items: center; text-align: center; }
     .footer-social-icons { justify-content: center; }
+
+        .input-wrap input[type="date"],
+    .input-wrap input[type="time"] {
+        color: var(--dark);
+        padding-top: 18px;
+        padding-bottom: 8px;
+    }
+
+    .input-wrap input[type="date"] ~ label,
+    .input-wrap input[type="time"] ~ label {
+        top: -9px;
+        font-size: 11px;
+        color: var(--dark);
+        font-weight: 600;
+        background: white;
+        border-radius: 4px;
+        padding: 1px 5px;
+    }
 }
 
 
