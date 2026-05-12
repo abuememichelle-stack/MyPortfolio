@@ -1,4 +1,4 @@
-/* ─── CSS VARIABLES ─── */
+/* ───CSS COLORS ─── */
 :root {
     --cyan: #00BCD5;
     --cyan-light: #C4F6FF;
@@ -27,9 +27,7 @@ body {
     overflow-x: hidden;
 }
 
-/* ═══════════════════════════════
-   NAV
-═══════════════════════════════ */
+/* ═NAV SETTINGS══ */
 nav {
     background-color: var(--nav-bg);
     padding: 14px 40px;
@@ -177,16 +175,11 @@ nav.scrolled {
 .mobile-menu .nav-link--cta { font-size: 18px; padding: 14px 48px; }
 
 
-/* ═══════════════════════════════
-   INTRO — hero section
-   "Hey, I'm" + "Michelle Abueme" on ONE line (desktop),
-   wraps naturally on smaller screens.
-═══════════════════════════════ */
+/* ══INTRO SECTION══ */
 .intro-block {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* tighten the gap so text and image feel close */
     gap: 24px;
     padding: 140px 60px 80px 60px;
     background: linear-gradient(145deg, var(--cyan) 0%, #a8f0f8 30%, var(--white) 65%);
@@ -209,7 +202,6 @@ nav.scrolled {
 
 .intro-text {
     flex: 1 1 0;
-    /* cap so it doesn't sprawl on very wide screens */
     max-width: 52%;
     animation: fadeSlideUp 0.9s var(--transition) both;
 }
@@ -219,10 +211,10 @@ nav.scrolled {
     to   { opacity: 1; transform: translateY(0); }
 }
 
-/* ── Headline: ── */
+/* ──FOR INTRO HEADLINE ── */
 .intro-headline {
     display: flex;
-    flex-wrap: wrap;          /* wraps on narrow screens */
+    flex-wrap: wrap;          
     align-items: baseline;
     gap: 0;
     margin-bottom: 16px;
@@ -320,10 +312,7 @@ nav.scrolled {
 }
 
 
-/* ═══════════════════════════════
-   WORK SECTION — roles bar
-   Text above image, equal gaps, no extra right space
-═══════════════════════════════ */
+/* ═══WORK SECTION═══════ */
 .work-section {
     background-color: var(--white);
     padding: 12px 0;
@@ -349,11 +338,11 @@ nav.scrolled {
     filter: drop-shadow(0 4px 12px rgba(0,188,213,0.1));
 }
 
-/* Roles: spread evenly across the remaining space */
+/* ROLES */
 .roles {
     flex: 1;
     display: flex;
-    justify-content: space-evenly; /* equal gaps, no extra right space */
+    justify-content: space-evenly; 
     align-items: center;
     flex-wrap: wrap;
     gap: 16px;
@@ -371,14 +360,13 @@ nav.scrolled {
 
 .role:hover { transform: translateY(-6px); }
 
-/* Text ABOVE image */
 .role p {
     font-size: 13px;
     font-weight: 500;
     color: var(--text-muted);
     letter-spacing: 0.02em;
     line-height: 1.4;
-    order: -1; /* ensures <p> renders before <img> visually */
+    order: -1; 
 }
 
 .role img {
@@ -392,9 +380,7 @@ nav.scrolled {
 .role:hover img { transform: scale(1.15) rotate(-3deg); }
 
 
-/* ═══════════════════════════════
-   APPROACH
-═══════════════════════════════ */
+/* ══APPROACH═══ */
 .approach-section {
     display: flex;
     min-height: 640px;
@@ -422,7 +408,6 @@ nav.scrolled {
     background: linear-gradient(160deg, var(--cyan-light) 0%, var(--white) 60%);
     display: flex;
     flex-direction: column;
-    /* generous vertical padding for desktop breathing room */
     padding: 60px 60px;
     position: relative;
     justify-content: center;
@@ -444,12 +429,11 @@ nav.scrolled {
     font-family: 'Playfair Display', serif;
     font-size: clamp(26px, 3.5vw, 44px);
     color: var(--dark);
-    margin-bottom: 48px; /* more space below heading */
+    margin-bottom: 48px; 
 }
 
-/* Each approach block: generous spacing */
 .approach-item {
-    margin-bottom: 48px; /* more space between Collaborative & Iterative */
+    margin-bottom: 48px; 
 }
 
 .approach-item:last-child { margin-bottom: 0; }
@@ -461,7 +445,6 @@ nav.scrolled {
     color: var(--dark);
     margin-bottom: 14px;
     letter-spacing: 0.02em;
-    /* no decorative lines */
 }
 
 .approach-item p {
@@ -472,10 +455,7 @@ nav.scrolled {
 }
 
 
-/* ═══════════════════════════════
-   CORE VALUE HIGHLIGHTS
-   Items stacked vertically, centred
-═══════════════════════════════ */
+/* ════CORE VALUE HIGHLIGHTS═══ */
 .highlight {
     background: var(--white);
     padding: 20px;
@@ -502,7 +482,6 @@ nav.scrolled {
     color: var(--dark);
 }
 
-/* Stack items top-to-bottom, centred */
 .core-items {
     display: flex;
     flex-direction: column;
@@ -531,9 +510,7 @@ nav.scrolled {
 }
 
 
-/* ═══════════════════════════════
-   EXPERTISE
-═══════════════════════════════ */
+/* ══EXPERTISE════ */
 .expertise-section {
     background: var(--white);
     padding: 60px 20px 0;
@@ -625,9 +602,7 @@ nav.scrolled {
 }
 
 
-/* ═══════════════════════════════
-   CTA BUTTON
-═══════════════════════════════ */
+/* ══BTN═══ */
 .btn-container {
     display: flex;
     justify-content: center;
@@ -669,9 +644,7 @@ nav.scrolled {
 }
 
 
-/* ═══════════════════════════════
-   CREDIBILITY
-═══════════════════════════════ */
+/* ═══CREDIBILITY════ */
 .credibility-section {
     background: var(--white);
     display: flex;
@@ -738,9 +711,7 @@ nav.scrolled {
 }
 
 
-/* ═══════════════════════════════
-   FOOTER
-═══════════════════════════════ */
+/* ═FOOTER═══ */
 .footer-section {
     background: linear-gradient(160deg, var(--cyan-light) 0%, var(--white) 60%);
     padding: 60px 0 24px;
@@ -822,9 +793,7 @@ nav.scrolled {
 }
 
 
-/* ═══════════════════════════════
-   SCROLL REVEAL
-═══════════════════════════════ */
+/* ══SCROLL REVEAL════ */
 .reveal {
     opacity: 0;
     transform: translateY(28px);
@@ -837,9 +806,7 @@ nav.scrolled {
 .reveal-delay-3 { transition-delay: 0.3s; }
 
 
-/* ═══════════════════════════════
-   RESPONSIVE — TABLET  ≤ 1024px
-═══════════════════════════════ */
+/* ═══RESPONSIVE — TABLET  ≤ 1024px═════ */
 @media (max-width: 1024px) {
     .intro-block { padding: 130px 40px 60px; gap: 20px; }
     .intro-text  { max-width: 54%; }
@@ -848,9 +815,7 @@ nav.scrolled {
 }
 
 
-/* ═══════════════════════════════
-   RESPONSIVE — MOBILE  ≤ 768px
-═══════════════════════════════ */
+/* ═════RESPONSIVE — MOBILE  ≤ 768px═════ */
 @media (max-width: 768px) {
     nav { padding: 14px 24px; }
     .nav-links { display: none; }
@@ -915,10 +880,7 @@ nav.scrolled {
     .footer-social-icons { justify-content: center; }
 }
 
-
-/* ═══════════════════════════════
-   RESPONSIVE — SMALL MOBILE  ≤ 480px
-═══════════════════════════════ */
+/* ═════RESPONSIVE — SMALL MOBILE  ≤ 480px═════════ */
 @media (max-width: 480px) {
     .intro-block { padding: 96px 16px 48px; }
     .greeting, .name { font-size: clamp(22px, 8vw, 36px); }
